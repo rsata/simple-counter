@@ -33,6 +33,7 @@ module.exports = function (socket) {
         socket.emit('frame', { 
           buffer: im.toBuffer(),
           person: personPresent,
+          present: personPresent,
         });
       });
     });
