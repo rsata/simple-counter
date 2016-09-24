@@ -3,8 +3,8 @@ var name;
 
 function setName() {
   name = document.getElementById('name').value;
-  // document.getElementById("usernameInput").style.display = "none";
-  // document.getElementById("countArea").style.display = "block";
+  document.getElementById("usernameInput").style.display = "none";
+  document.getElementById("countArea").style.display = "block";
   socket.emit('addUser', name);
 }
 
